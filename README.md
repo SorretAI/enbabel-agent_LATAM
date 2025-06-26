@@ -30,12 +30,20 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 
-Embabel (Em-BAY-bel) is a framework for authoring agentic flows on the JVM that seamlessly mix LLM-prompted interactions
-with code and domain models. Supports
-intelligent path finding towards goals. Written in Kotlin
-but offers a natural usage
-model from Java.
-From the creator of Spring.
+EnbabelLATAM *Ask a friend who speaks Spanish to pronounce it for you, it has a prosodic accent, and he or she will know. IF Neither(he<>she?) --> Repeat
+until you find the unique pronunciation that resonates the most with you. Trust me when, with such a unique repertouire pronunciation that you may want 
+to compare it with a HE or SHE across LATAM(for Latin America+=enBabel || --->> Latam :: Yah'all feel me?, lol right?/  
+
+We a framework for authoring agentic flows on the JVM that seamlessly mix LLM-prompted interactions with code and domain models. This particular fork 
+focuses on its deployment enhancements and the Ducie flavor of sharing, discovery && community MANAGEMENT progress that we do as humans, as in this era, 
+machine learning comes to manifest as HUMAN <--> SCILICON progressive (add trance too pls), since CarbonCopies are smart but scilicon which is more 
+abundant in nature is fastly catching up. or is it not? what do you think? or more importantly what you and your communities are doing about and \
+WITH IT ??? (answer first in your mind, let the inquiry guide you to a more integrative discort/social approach.
+
+Supports intelligent path finding towards goals. Written in Kotlin
+but offers a natural usage model from Java.
+
+From the creator of Spring. LATAM AD ONS <-- by Luisfe Sorret (yo! FAM, where are the Italics&&BOLD for my name... ROAR)
 
 ## Key Concepts
 
@@ -47,40 +55,56 @@ Models agentic flows in terms of:
   Conditions are reassessed after each action is executed.
 - **Domain model**: Objects underpinning the flow and informing Actions, Goals and Conditions.
 - **Plan**: A sequence of actions to achieve a goal. Plans are dynamically formulated by the system, not the programmer.
-  The
-  system replans after the completion of each action, allowing it to adapt to new information as well as observe the
+
+  The system replans after the completion of each action, allowing it to adapt to new information as well as observe the
   effects of the previous action.
   This is effectively an [OODA loop](https://en.wikipedia.org/wiki/OODA_loop).
+I have found basic good old recursive functions and add them to the mix (LS)
 
 > Application developers don't usually have to deal with these concepts directly,
 > as most conditions result from data flow defined in code, allowing the system to infer
 > pre and post conditions.
 
+<<- I've added new ones, find them and get golden tickets, USE WISELY.
 These concepts underpin these differentiators versus other agent frameworks:
 
 - **Sophisticated planning.** Goes beyond a finite state machine or sequential execution
   with nesting by introducing a true planning step, using a
-  non-LLM AI algorithm. This enables the system to perform tasks it wasn’t programmed to do by combining known
-  steps in
-  a novel order, as well as make decisions about parallelization and other runtime behavior.
-- **Superior extensibility and reuse**: Because of dynamic planning, adding more domain objects, actions, goals and
-  conditions
-  can extend the capability of the system, _without editing FSM definitions_ or existing code.
-- **Strong typing and the benefits of object orientation**: Actions, goals and conditions are informed by a domain
-  model, which can
-  include behavior. Everything is strongly typed and prompts and
-  manually authored code interact cleanly. No more magic maps. Enjoy full refactoring support.
+  non-LLM AI algorithm.
+
+  This enables the system to perform tasks it wasn’t programmed to do by combining known
+  steps in a novel order,
+   as well as make decisions
+   about parallelization and
+   other runtime behavior.
+  
+- **Superior extensibility and reuse**: Because of dynamic planning,
+- adding more domain objects, actions, goals and conditions //->
+   can extend the capability of the system, _without editing FSM definitions_
+   or existing code.
+- **Strong typing and the benefits of object orientation**: Actions, goals a
+   and conditions are informed by a domain model, which can
+  include behavior. Everything is strongly typed. Prompts are
+  manually authored code that interact cleanly. No more magic maps.
+
+  Enjoy full refactoring support.
+
+LS :: I've added a few of my own, ENJOY!
 
 Other benefits:
 
 - **Platform abstraction**: Clean separation between programming model and platform internals allows running locally
-  while
-  potentially offering higher QoS in production without changing application code.
+  while potentially offering higher QoS in production without changing application code.
+  
 - **Designed for LLM mixing**: It is easy to build applications that mix LLMs, ensuring the most cost-effective yet
   capable solution.
+
   This enables the system to leverage the strengths of different models for different tasks. In particular, it
   facilitates
-  the use of local models for point tasks. This can be important for cost and privacy.
+  the use of local models for point tasks.
+
+  This can be important for cost and privacy.
+  
 - **Built on Spring and the JVM,** making it easy to access existing enterprise functionality and capabilities.
   For example:
     - Spring can inject and manage agents, including using Spring AOP to decorate functions.
