@@ -176,11 +176,9 @@ Create your own agent repo from our [Java](https://github.com/embabel/java-agent
 or [Kotlin](https://github.com/embabel/kotlin-agent-template) GitHub template by clicking the "Use this template"
 button.
 
-You can also create your own Embabel agent project locally with our quick start tool:
-
-```
-uvx --from git+https://github.com/embabel/project-creator.git project-creator
-```
+{You can also create your own Embabel agent project locally with our quick start tool:
+``uvx --from git+https://github.com/embabel/project-creator.git project-creator``+FAM||-->
+SORRET_NEWS_mayorTom,joinVC=NakamotoDJ}
 
 Choose Java or Kotlin and specify your project name and package name and you'll have an agent running in under a minute,
 if you already have an `OPENAI_API_KEY` and have Maven installed.
